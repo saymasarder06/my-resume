@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume-container</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .resume-container {
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            width: 35%;
+            background-color: #e6f0f7; /* Lighter blue/grey for sidebar */
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2em;
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .sidebar p, .sidebar ul {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+       
+        .sidebar ul li {
+            margin-bottom: 5px;
+        }
+
+        .main-content {
+            width: 65%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .header-section {
+            text-align: right;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header-section p {
+            font-size: 1.2em;
+            color: #777;
+            margin: 5px 0 0;
+        }
+       
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .main-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .job-entry, .project-entry, .education-entry {
+            margin-bottom: 20px;
+        }
+       
+        .job-entry h3, .project-entry h3, .education-entry h3 {
+            font-size: 1.1em;
+            margin: 0;
+            color: #444;
+        }
+       
+        .job-entry .company, .project-entry p, .education-entry .university {
+            font-style: italic;
+            font-size: 0.95em;
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .job-entry .dates, .education-entry .dates {
+            font-size: 0.9em;
+            color: #777;
+            float: right;
+        }
+
+        .job-entry ul {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .skills-section ul {
+            list-style: none;
+            padding: 0;
+        }
+       
+        .skills-section li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+       
+        <aside class="sidebar">
+            <img src="img3.jpg" alt="" class="profile-picture">
+           
+            <section class="about-section">
+                <h2>about me</h2>
+                <p>I am currently pursuing a Diploma in Computer Science and Engineering (CSE). At present, I am completing my attachment at an IT firm named BD Calling. Through this experience, I am highly motivated to become a skilled Software Engineer.
+My goal is to make people’s lives easier by utilizing modern technologies.</p>
+            </section>
+
+            <section class="education-section">
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>CSE</h3>
+                    <p class="university">Dhaka Mohila Polytechnic Institute</p>
+                    <p>(Season:21-22)</p>
+                    <h3>SSC</h3>
+                    <p class="school">BSMA(Season:2021)</p>
+                </div>
+            </section>
+           
+            <section class="language-section">
+                <h2>language</h2>
+                <ul>
+                    <li>Bangla</li>
+                    <li>English</li>
+                </ul>
+            </section>
+
+            <section class="interests-section">
+                <h2>Interests</h2>
+                <p>Researching new technology and developing innovative projects</p>
+                <p>Drawing and Traveling</p>
+                <p>Coding and problem solving</p>
+            </section>
+        </aside>
+
+        <main class="main-content">
+           
+            <header class="header-section">
+                <div class="profile-info">
+                    <h1>Shayma Sarder Shorna</h1>
+                    <p>Web Developer</p>
+                </div>
+                <div class="contact-info">
+                    <p><strong><i class="fa fa-phone"></i></strong> 01886553749</p>
+                    <p><strong><i class="fa fa-envelope"></i></strong> saymasarder653@gmail.com</p>
+                    <p><strong><i class="fa fa-linkedin"></i></strong> linkedin.com/in/sayma-shayma-96294837a</p>
+                </div>
+            </header>
+
+            <section class="experience-section">
+                <h2>Experience</h2>
+                 <div class="project-entry">
+                    <h3>Industrial Traning(Ongoing)</h3>
+                    <p>BD Calling IT FIRM</p>
+                    <p>Currently undergoing industrial training (attachment) at BD Calling IT Firm as part of my Diploma program. Through this training, I am gaining hands-on experience in real-world IT practices, enhancing my knowledge of software, programming, and industry-level project development.
+  </p>
+                 </div>
+                  <div class="project-entry">
+                    <h3>Academic Experience</h3>
+                    <p>During my Diploma studies, I completed various academic projects that helped me develop knowledge in programming languages (HTML, CSS, JavaScript, PHP), as well as basic hardware and software concepts.</p>
+                 </div>
+            </section>
+
+            <section class="skills-section">
+                <h2>Communication & Soft Skils</h2>
+               <div class="project-entry">
+                    <h3>programing Language:</h3>
+                    <p>HTML,CSS,PHP</p>
+                    <p>Teamwork,Leadership,Problem-solving,Research</p>
+                </div>
+            </section>
+           
+            <section class="projects-section">
+                <h2>Project</h2>
+                <div class="project-entry">
+                    <h3>Library management System</h3>
+                    <p>Developed a library management system using PHP, HTML, CSS, and a connected database.</p>
+                </div>
+                <div class="project-entry">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and built a personal portfolio website with HTML, CSS, PHP, JS, and database integration.</p>
+                </div>
+                 <div class="project-entry">
+                    <h3>CRUD Operation</h3>
+                    <p>Implemented a CRUD operation project using PHP and database connectivity.</p>
+                </div>
+            </section>
+
+            
+        </main>
+
+    </div>
+
+</body>
+</html> 
